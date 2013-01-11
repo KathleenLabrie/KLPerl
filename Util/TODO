@@ -1,0 +1,2 @@
+- Transfer 'getLines' and 'getListOf' to Util::File
+- Write docs.

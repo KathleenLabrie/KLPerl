@@ -1,0 +1,15 @@
+20 June 2001: [v0.1.0]
+	First packaged.
+
+10 July 2001: [v0.2.0]
+	Added 'median' and 'stddev' routines to 'Util.pm'
+
+20 July 2001: [v0.2.1]
+	Util.pm - stddev: added a line to deal with the one value case.
+
+28 August 2001: [v0.3.0]
+	Makefile: Added error messages and codes.  Set up Exporter.
+		Other maintenance.
+
+15 November 2001: [v0.3.1]
+	Fix Makefile. Install section wasn't creating directories.
