@@ -1,0 +1,5 @@
+10 July 2001: [v0.1.0]
+	Packaged under Linux RedHat.
+
+15 November 2001: [v0.1.1]
+	Fix Makefile.  Install section wasn't creating the directories
