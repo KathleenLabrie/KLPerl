@@ -1,0 +1,8 @@
+28 August 2001: [v0.1.0]
+	Module created and linked to Util.pm
+
+13 November 2001: [v0.1.1]
+	- add 'checkrd'
+
+15 November 2001: [v0.1.2]
+	Fix Makefile.  Install section wasn't creating directories.
