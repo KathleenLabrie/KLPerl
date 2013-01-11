@@ -1,0 +1,5 @@
+26 June 2001: [v0.1.0]
+	First packaged
+
+15 November 2001: [v0.1.1]
+	Fix Makefile.  Install section wasn't creating directories.
