@@ -1,0 +1,18 @@
+- Add command line arguments checks (eg. recognized options)
+- Combine shouldn't be limited to minmax or at least it should refuse
+  anything but minmax.  Currently, it accepts anything but does minmax
+  anyway.
+- imstatistics/imstatsel don't do 'mode' correctly.  I don't know why
+  and I don't know what it actually calculates.
+- Test 'imslice'
+- In imstatsel: doesn't work with '*.fits[section]'; Unix won't expand
+  the file names.  Do the expansion within program.
+
+  Selection is weird.  Rewriting might be useful.
+
+  Text 'imstatsel' with typical commands for dark stats.  Simple selection
+  commands don't work.
+- Write docs.
+
+- Complete imcopy and rotate.
+- Consider moving thumbnail to another package

@@ -1,0 +1,20 @@
+19 June 2001: [v0.1.0]
+	First packaged.
+
+10 July 2001: [v0.1.1]
+	Imstatsel: fixed a bug.  was trying to translate 'keyselect' even
+		when not defined.
+
+20 July 2001: [v0.1.2]
+	Imstatsel: 
+		- fixed a bug. Still used TSTRING instead of 'string'.  Also
+		  was comparing with = instead of == or eq.
+		- Fixed to be able to translate subsets not just keywords.
+
+15 November 2001: [v0.1.3]
+	Fix Makefile.  Install section wasn't creating directories.
+	Also, change 'IRAFDIR =' to 'IRAFBIN =' in configuration.
+
+19 August 2002: [v0.1.4]
+	Add imcopy and rotate.
+	Add thumbnail (not sure is this were it belong though).
