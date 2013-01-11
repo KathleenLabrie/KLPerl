@@ -1,0 +1,5 @@
+- Test all this.
+- Write docs.
+- Fix the logfile problem (doesn't always use logfile given on command line)
+- Search for 'DomeFlat*' and 'SkyFlat*' as well as 'Flat*' when checking if the
+  data has been correctly pre-processed before moving on.  (in goCorrection)

@@ -1,0 +1,85 @@
+27 June 2001: [v0.1.0]
+	First packaged
+
+13 July 2001: [v0.1.1]
+	CCDred (lookForCalib): fixed a bug in pattern substitution for darks.
+			       I have no idea why it never caused problems 
+			       because it was a mistake.
+
+18 July 2001: [v0.1.2]
+	CCDred (cleanDir): won't delete calib images when working in calibDir.
+
+20 July 2001: [v0.1.3]
+	CCDred.pm - goFixPix: fixed a typo.
+
+3 Sept 2001: [v0.2.0]
+	CCDred.pm - lookForCalib: 
+		* add implementation for 'flattype' with the variable 
+		  'extraObstype'
+		* put image selection outside the if-elseif, all ifs were doing 
+		  the same thing anyway
+		* a list of images can be used instead of defaulting to all the
+		  file in the directory
+		* will select subsets among the images that actually need the
+		  correction
+	CCDred.pm - combCalib: 
+		* fixed a typo
+		* add implementation for 'flattype' with the variable 
+		  'extraObstype'
+		* a list of images can be used instead of defaulting to all the
+		  file in the directory
+	CCDred.pm - flatcombine: 
+		* add implementation for 'flattype' with the variable 
+		  'extraObstype'
+	CCDred.pm - goCorrection:
+		* add implementation for 'flattype' with the variable 
+		  'extraObstype'
+		* a list of images can be used instead of defaulting to all the
+		  file in the directory
+	CCDred.pm - ccdFlat:
+		* add implementation for 'flattype' with the variable
+		  'allParamRef{'extraObstype'}'
+	CCDred.pm - cleanDir:
+		* add implementation for 'flattype'
+	CCDred.pm - testFlag:
+		* changed 'flag' to 'refFlag'; the value has to be passed as a 
+		  reference since it will be updated.
+	CCDred.pm - mkIllum:
+		* add 'epoch' to variable passed in
+	CCDred.pm - mkFringe:
+		* add 'epoch' to variable passed in
+	CCDred.pm - ccdFringe:
+		* change $paramFile to $$allParamRef{'paramFile'}
+	CCDred.pm - ccdDC:
+		* change $paramFile to $$allParamRef{'paramFile'}
+		* add $allParamRef in arguments
+	reduc.pl: 
+		* add 'flattype' option to deal with domeflats and skyflats
+		  separately
+		* imgList now defaults to an empty string instead of 'files.lis'
+		* fixed subroutine calls to 'lookForCalib', 'combCalib' and
+		  'goCorrection', 'mkIllum' and 'mkFringe'
+		* fixed a bug in command line parsing. now look for '--' and '-'		  at the *begining* of the argument.
+		* fixed call of CCDred::testFlag to pass flag as a reference.
+	flatcombine.pl: 
+		* add implementation for 'flattype' with the input tag 'oprefix'
+	ccdproc.pl:
+		* add implementation for 'flattype' with 'option' and
+		  'moreParam{'extraObstype'}'
+		* add $allParam{'paramFile'} (used in ccdFringe)
+	mkillum.pl:
+		* fix a bug. was appending a logfile even when not defined.
+	mkfringe.pl:
+		* fix definition of 'imstat'
+	Makefile:
+		* 'Look for IRAF pkg': IRAFDIR replaced with IRAFBIN
+
+12 Nov, 2001: [v0.2.1]
+	- add small routine 'enametype.pl'
+
+15 November 2001: [v0.2.2]
+	Fix Makefile. Install section wasn't creating directories.
+
+16 November 2001: [v0.2.3]
+	Fix 'enametype' to deal with the 'none' type.  Also added USAGE
+	and HELP, and '--version' tag.
